@@ -1,88 +1,40 @@
-\# Evolutionary Dynamics of AI Discourse: A Multimodal Structural Entropy Approach
+# Evolutionary Dynamics of AI Discourse: A Multimodal Structural Entropy Approach
 
+This repository contains the official source code for the paper "Evolutionary Dynamics of AI Discourse: A Multimodal Structural Entropy Approach" (Submitted to IEEE Transactions on Big Data).
 
+## 📂 Project Structure
 
-This repository contains the official source code for the paper \*\*"Evolutionary Dynamics of AI Discourse: A Multimodal Structural Entropy Approach"\*\* (Submitted to IEEE Transactions on Big Data).
+*   `src/`: Python source codes for graph construction and analysis.
+*   `data/`: Sample dataset (Desensitized for privacy).
+*   `output/`: Generated results.
 
+## 🚀 How to Run
 
+1.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-\## 📂 Project Structure
+2.  Run the pipeline:
+    ```bash
+    # Step 1: Construct the graph
+    python src/graph_construction.py --csv_path data/sample.csv
 
+    # Step 2: Run evolutionary analysis
+    python src/evolutionary_analysis.py --graph_path output/graph_v1/tv_hin_graph.pkl
+    ```
 
-
-\*   `src/`: Python source codes for graph construction and analysis.
-
-\*   `data/`: Sample dataset (Desensitized for privacy).
-
-\*   `output/`: Generated results.
-
-
-
-\## 🚀 How to Run
-
-
-
-1\.  \*\*Install dependencies:\*\*
-
-&nbsp;   ```bash
-
-&nbsp;   pip install -r requirements.txt
-
-&nbsp;   ```
-
-
-
-2\.  \*\*Run the pipeline:\*\*
-
-&nbsp;   ```bash
-
-&nbsp;   # Step 1: Construct the graph
-
-&nbsp;   python src/graph\_construction.py --csv\_path data/sample.csv
-
-
-
-&nbsp;   # Step 2: Run evolutionary analysis
-
-&nbsp;   python src/evolutionary\_analysis.py --graph\_path output/graph\_v1/tv\_hin\_graph.pkl
-
-&nbsp;   ```
-
-
-
-\## ⚙️ Theory Correspondence
-
-
+## ⚙️ Theory Correspondence
 
 | Code Parameter | Paper Symbol | Description |
-
 | :--- | :---: | :--- |
+| `threshold` | $\theta_{sem}$ | Semantic resolution threshold (0.80) |
+| `stance_weight` | $1+\lambda$ | Stance modulation factor (1.2) |
+| `compute_entropy` | $H^2(G)$ | 2D Structural Entropy |
 
-| `--threshold` | $\\theta\_{sem}$ | Semantic resolution threshold (0.80) |
+## 📜 Citation
 
-| `--stance\_weight` | $1+\\lambda$ | Stance modulation factor (1.2) |
+If you find this code and dataset useful, please cite our paper (wish me luck if my paper is accepted!).
 
-| `compute\_entropy` | $H^2(G)$ | 2D Structural Entropy |
-
-
-
-\## 📜 Citation
-
-
-
-If you find this code useful, please cite our paper:
-
-
-
-```bibtex
-
-@article{Zhang2025Evolutionary,
-
-&nbsp; title={Evolutionary Dynamics of AI Discourse},
-
-&nbsp; journal={IEEE Transactions on Big Data (Submitted)},
-
-&nbsp; year={2025}
-
-}
+Also, if you need the complete multimodal image and text dataset, you can contact me (of course, only after my paper is accepted).
 
